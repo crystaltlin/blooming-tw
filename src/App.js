@@ -5,6 +5,7 @@ import Button from 'react-bootstrap/Button';
 import { HuePicker } from 'react-color';
 import Slider from '@material-ui/core/Slider';
 
+
 const marks = [
   {
     value: 0,
