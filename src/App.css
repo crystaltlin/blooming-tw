@@ -1,0 +1,340 @@
+:root {
+  --title-height: 12vh;
+  --app-height: 88vh;
+  --app-height-half: 44vh; 
+  --app-width: 94vw;
+  --app-width-half: 47vw;
+  --bar-width: 6vw;
+  --bar-height: 40vh;
+}
+
+.app {
+  display: flex;
+  text-align: center;
+  align-items: center; 
+  height: var(--app-height);
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: Helvetica;
+}
+
+h2 {
+  margin-top: 10vh;
+  margin-bottom: 3vh;
+  font-weight: bolder;
+}
+
+
+h4 {
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
+
+p {
+  font-weight: lighter;
+  text-align: left;
+  font-size: 20px;
+  margin: 3vh;
+}
+
+
+.App-link {
+  color: #09d3ac;
+}
+
+
+#taiwan {
+  width: 20vw;
+  vertical-align: middle !important;
+}
+
+
+.grid-container{
+  width: var(--app-width);
+  height: var(--app-height);
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+}
+
+.grid-item{
+  width: var(--app-width-half);
+  height: var(--app-height-half);
+  border: 1px solid #dfdfdf;
+  overflow: hidden;
+}
+
+.right-grid {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 2;
+  overflow: hidden;
+}
+
+.left-grid {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 1;
+  overflow: hidden;
+}
+
+.top-left-grid {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 1;
+  overflow: hidden;
+}
+
+.bottom-left-grid {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 1;
+  overflow: hidden;
+}
+
+
+
+.description {
+  padding: 5vw;
+}
+
+.grid-image {
+  min-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bars{
+  width: var(--bar-width);
+}
+
+#color-bar{
+  position: absolute;
+  top: 10vh;
+  height: var(--bar-height);
+}
+
+#season-bar{
+  position: absolute;
+  top: 27vh;
+  height: var(--bar-height);
+}
+
+.btn{
+  position: absolute;
+  top: 90vh;
+  left: 0.5vw;
+  width: 5vw;
+  font-size: 1.5vw;
+  text-align: center;
+  padding: 1vw;
+}
+
+.hue-picker{
+  /*transform: rotate(90deg);*/
+  position: absolute;
+  margin-left: 2vw;
+  width: 2vw;
+  height: 40vh;
+}
+
+
+
+#map{
+  position: absolute;
+  width: var(--app-width);
+  height: var(--app-height);
+  vertical-align: middle !important;
+  display:table-cell;
+  vertical-align:middle;
+  text-align:center;
+  line-height: 90vh;
+}
+
+.dot {
+  background-color: #000000;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+#button-container{
+  position: relative;
+  width: 20vw;
+  height: 40vw;
+  vertical-align: middle !important;
+  margin-top: 30vh;
+}
+
+#close-button{
+  position: absolute;
+  top: 10vh;
+  left: 7vw;
+  margin: 0;
+  padding: 0;
+}
+
+#detail-button-right{
+  background-color: white;
+  position: absolute;
+  top: 10vh;
+  left: 54vw;
+  margin: 0;
+  padding: 0;
+  width: 10vw;
+}
+
+#detail-button-left{
+  background-color: white;
+  position: absolute;
+  top: 10vh;
+  left: 7vw;
+  margin: 0;
+  padding: 0;
+  width: 10vw;
+}
+
+#detail-button-bottom{
+  background-color: white;
+  position: absolute;
+  top: 55vh;
+  left: 7vw;
+  margin: 0;
+  padding: 0;
+  width: 10vw;
+}
+
+#detail-button-right:hover, #detail-button-left:hover, #detail-button-bottom:hover {
+  background-color: #343a40;
+}
+
+#kaoshiung {
+  margin-left: -13vw;
+  margin-top: 56vh;
+}
+
+#tainan {
+  margin-left: -14vw;
+  margin-top: 50vh;
+}
+
+#hualien {
+  margin-left: -8vw;
+  margin-top: 48vh;
+}
+
+#changhua {
+  margin-left: -14vw;
+  margin-top: 44vh;
+}
+
+#chunghsing {
+  margin-left: -13vw;
+  margin-top: 42vh;
+}
+
+#qingjing {
+  margin-left: -10vw;
+  margin-top: 41vh;
+}
+
+#hehuan{
+  margin-left: -9.5vw;
+  margin-top: 38.5vh;
+}
+
+#wulin {
+  margin-left: -9vw;
+  margin-top: 36vh;
+}
+
+#miaoli {
+  margin-left: -12vw;
+  margin-top: 35vh;
+}
+
+#xinpu{
+  margin-left: -11vw;
+  margin-top: 33vh;
+}
+
+
+#qionglin{
+  margin-left: -10.5vw;
+  margin-top: 32vh;
+}
+
+
+#guanyin{
+  margin-left: -10vw;
+  margin-top: 28vh;
+}
+
+#yangming{
+  margin-left: -7vw;
+  margin-top: 25vh;
+}
+
+#yilan{
+  margin-left: -6vw;
+  margin-top: 30vh;
+}
+
+#taiping{
+  margin-left: -7vw;
+  margin-top: 32vh;
+}
+
+#daxi{
+  margin-left: -8vw;
+  margin-top: 29vh;
+}
+
+.dot:hover{
+  height: 15px;
+  width: 15px;
+}
+
+.red:hover {
+  background-color: red;
+}
+
+.orange:hover, #changhua:hover, #hualien:hover {
+  background-color: orange;
+}
+
+.yellow:hover {
+  background-color: yellow;
+}
+
+.purple:hover{
+  background-color: blueviolet;
+}
+.pink:hover {
+  background-color: pink;
+}
+
+.white:hover{
+  background-color: white;
+  border: solid black;
+}
+
+.green:hover {
+  background-color: green;
+}
+
+
+
+
+
+
+
+
+
+
