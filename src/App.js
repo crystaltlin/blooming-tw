@@ -447,6 +447,9 @@ class App extends React.Component{
         <HuePicker
           color={ this.state.sliderColor }
           onChange={ this.handleColorChange }
+          direction='vertical'
+          width='1vw'
+          height='40vh'
         />
         </div>
         <div id="season-bar">
